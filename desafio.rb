@@ -87,14 +87,36 @@ end
 
 busca(cadena,caracter)
 
-Ejercicio 8
+#Ejercicio 8
 
-curso =['Hugo Fuchslocher','Felipe Andrés Mahana Palomer','Luis Rodríguez Peña','Claudio Daza de la Parra','Adrian Tapia Silva','Patricia Vera','Yannick Michel Brionne Delgado','Fernanda Jara Galleguillos','Franco Benedetti','Felipe Andrés Urtubia ','Heraldo Andrés Huerta Aravena','Arturo Duarte','Milenko Castillo','Daniel Yañez Avila','Daniel Fuentes','Ignacio Alfonso Troncoso Barra','Kevin Matias Francisco Lucero Gomez','Norman Alejandro Castro Flores','Roberto Galaz','Patricio Venegas Leiva','Matias Exequiel Rojas Espinoza']
+curso =['Hugo','Felipe','Luis','Claudio','Adrian','Patricia','Yannick','Fernanda','Franco','Felipe ','Heraldo','Arturo','Milenko','Daniel','Daniel','Ignacio','Kevin','Norman','Roberto','Patricio','Matias']
 
-a.each.count
+# 1
 
-def masde5(a)
-   if a.each.count > 5
+def nom_may_5(arr)
+  arr.each do |i|
+    if i.length > 5
+      print "#{i}    "
+    end
+  end
+end
+nom_may_5(curso)
+
+# 2
+
+def minuscula(arr)
+  a = arr.dup
+  a.each{ |i| i.downcase!}
 end
 
-masde5(curso)
+a = minuscula(curso)
+print a
+
+# 3
+
+def met(arr)
+  arr.zip arr.collect{|x| x.length}
+end
+
+a = met(curso)
+print a
