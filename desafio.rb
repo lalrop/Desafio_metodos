@@ -61,7 +61,8 @@ numero_2 = gets.chomp.to_i
 
 dos_numero(numero_1,numero_2)
 
-# Ejercicio 6
+#Ejercicio 6
+
 def draw_line(size)
     puts '*' * size
 end
@@ -72,15 +73,28 @@ def draw_lines(size)
     end
 end
 
-draw_line(5)
 draw_lines(5)
 
-# Ejercicio 7
+#Ejercicio 7
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
 
-def busca (cadena, caracter)
-
-
+def busca(cadena, caracter)
+   cadena.include? caracter
+   puts "#{caracter} está dentro de #{cadena}"
 end
+
+busca(cadena,caracter)
+
+Ejercicio 8
+
+curso =['Hugo Fuchslocher','Felipe Andrés Mahana Palomer','Luis Rodríguez Peña','Claudio Daza de la Parra','Adrian Tapia Silva','Patricia Vera','Yannick Michel Brionne Delgado','Fernanda Jara Galleguillos','Franco Benedetti','Felipe Andrés Urtubia ','Heraldo Andrés Huerta Aravena','Arturo Duarte','Milenko Castillo','Daniel Yañez Avila','Daniel Fuentes','Ignacio Alfonso Troncoso Barra','Kevin Matias Francisco Lucero Gomez','Norman Alejandro Castro Flores','Roberto Galaz','Patricio Venegas Leiva','Matias Exequiel Rojas Espinoza']
+
+a.each.count
+
+def masde5(a)
+   if a.each.count > 5
+end
+
+masde5(curso)
